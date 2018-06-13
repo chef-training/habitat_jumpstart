@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ln -vsf {{pkg.svc_config_path}}/conf_server.xml {{pkgPathFor "core/tomcat8"}}/tc/conf/server.xml
+
+{{#if bind.database ~}}
+{{pkgPathFor "core/mongo-tools"}}/bin/mongoimport --drop -d demo -c nationalparks --type json --jsonArray --file {{pkg.path}}/national-parks.json --host={{bind.database.first.sys.ip}} --port={{bind.database.first.cfg.port}}
+{{/if ~}}
