@@ -14,7 +14,7 @@ pkg_origin=trgredbull
 
 # Required.
 # Sets the version of the package
-pkg_version="0.2.0"
+pkg_version="6.4.0"
 
 # Optional.
 # The name and email address of the package maintainer.
