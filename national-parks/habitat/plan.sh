@@ -1,6 +1,6 @@
 pkg_name=national-parks
 pkg_origin=osorgredbull
-pkg_version="6.3.1"
+pkg_version="6.4.1"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=("Apache-2.0")
 pkg_deps=(core/tomcat8 core/jre8 core/mongo-tools)
